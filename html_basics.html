@@ -1,0 +1,209 @@
+<!-- Basic Structure of an HTML document-->
+<html>
+  <head>
+    <title>Site Title</title>
+  </head>
+
+  <body>
+    <!-- This is an HTML comment 
+    
+    It looks different than our JavaScript comments
+    and can be used across multiple lines
+
+    -->
+  </body>
+</html>
+<!--  -------------------------------- -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Example Site</title>
+    <meta name="description" content="An example HTML site" />
+    <meta name="author" content="Zach Gollwitzer" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
+
+
+<!-- element -->
+<p class="paragraph-style">Some content</p>
+<!--  tag -->
+<p></p>
+
+<!--  Types of HTML tags
+Normal vs. "self closing" tags
+Container vs. Standalone tags
+-->
+
+<p></p>
+<h1></h1>
+<div></div>
+<span></span>
+<strong></strong>
+
+<img />
+<input />
+<meta />
+<link />
+<button></button>
+<a></a> <!-- link  -->
+
+
+<!-- 
+ HTML is NOT case-sensitive!
+Line breaks do not affect HTML
+-->
+
+<!-- h1-h6  tag
+-headings
+-to organize web pages 
+-Do not skip heading levels: always start from <h1>, followed by <h2> and so on.
+-Avoid using multiple <h1> elements on one page
+-->
+<h1>Page Title</h1>
+<h2> Secondary Heading</h2>
+
+<!-- p tag -->
+<p>some text </p>
+
+<!--span 
+-inline with the rest of the text but styled different -->
+<span></span>
+<p>Gradually add the <span class="ingredient">olive oil</span> while running the blender slowly.</p>
+
+
+<!-- em tag  
+-italic
+-not best pratice- use css-->
+<p>
+    Ice cream is made with milk, sweetener, and cream. Frozen custard, on the
+    other hand, is made of milk, cream, sweetener, and <em>egg yolks</em>.
+  </p>
+<!-- strong tag 
+-bold
+-not best pratice- use css -->
+<!-- div element
+-conatiner -->
+<div class="warning">
+    <img src="/media/examples/leopard.jpg" alt="An intimidating leopard." />
+    <p>Beware of the leopard</p>
+</div>
+  
+<!--  a tag - anchor element
+-link
+-with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.
+-->
+<p>You can reach Michael at:</p>
+
+<ul>
+  <li><a href="https://example.com">Website</a></li>
+  <li><a href="mailto:m.bluth@example.com">Email</a></li>
+  <li><a href="tel:+123456789">Phone</a></li>
+</ul>
+<!-- input 
+- in order to accept data from the user;
+-different types- checkbox,button,color,date,email,hidden,file,password,range etc
+-->
+<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+
+<!-- img tags  
+-Embeds an image into the document.
+-->
+<img
+  class="fit-picture"
+  src="/media/cc0-images/grapefruit-slice-332-332.jpg"
+  alt="Grapefruit slice atop a pile of other slices" />
+
+
+<!--  button tag
+-An interactive element activated by a user with a mouse, keyboard, finger
+-different attributes - 
+-->
+ <button class="favorite styled" type="button">Add to favorites</button>
+
+<!-- event handling -->
+<button onclick="alertMe()">CLICK ME</button>
+<!-- in JS part
+function alertMe(){
+    alert('Hi!');
+} 
+-->
+
+<!-- list tag 
+-Represents an unordered list of items, typically rendered as a bulleted list.
+-type -circle,disc,square
+-->
+
+<ul></ul>
+<ul>
+    <li>Milk</li>
+    <li>
+      Cheese
+      <ul>
+        <li>Blue cheese</li>
+        <li>Feta</li>
+      </ul>
+    </li>
+  </ul>
+  <!-- ol tag 
+represents an ordered list of items — typically rendered as a numbered list.
+1. --
+2. --
+-->
+<ol>
+    <li>Mix flour, baking powder, sugar, and salt.</li>
+    <li>In another bowl, mix eggs, milk, and oil.</li>
+    <li>Stir both mixtures together.</li>
+    <li>Fill muffin tray 3/4 full.</li>
+    <li>Bake for 20 minutes.</li>
+</ol>
+  
+<!--  -->
+<!--  table tag
+    thead
+    tr
+    th
+    tbody
+    tfoot
+-->
+<table>
+    <caption>
+      Front-end web developer course 2021
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Person</th>
+        <th scope="col">Most interest in</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Chris</th>
+        <td>HTML tables</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <th scope="row">Dennis</th>
+        <td>Web accessibility</td>
+        <td>45</td>
+      </tr>
+      
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row" colspan="2">Average age</th>
+        <td>33</td>
+      </tr>
+    </tfoot>
+  </table>
+  
